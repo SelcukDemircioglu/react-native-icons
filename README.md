@@ -24,12 +24,16 @@ import { FaBook } from "react-icons-native/fa";
 
 function Question() {
   return (
-    <View>
-      <FaBook width={40} height={40} fill="blue" />
+    <View style={styles.container}>
+       <FaBook  width={40} height={40} fill="blue"  />
+       <FaBook  width={100} height={100} fill="green" />
+       <FaBook  width={200} height={200} fill="red" />
+       <FaBook  width={300} height={500} fill="cyan" />
     </View>
   );
 }
 ```
+<img src="./view.png" width="120" alt="React Icons">
 
 
 ## Icons
