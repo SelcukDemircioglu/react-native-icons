@@ -1,19 +1,22 @@
 {
-  "name": "react-native-icons",
-  "version": "1.0.0",
+  "name": "react-icons-native",
+  "version": "1.0.4",
   "description": "",
+  "homepage": "https://github.com/SelcukDemircioglu/react-native-icons",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SelcukDemircioglu/react-native-icons"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "react-native-svg": "14.1.0"
   },
   "keywords": [
     "react-native-icons",
     "react-native",
+    "native icons",
     "icons"
   ],
-  "author": "Selçuk Demircioğlu",
+  "author": "Selçuk Demircioğlu demirciogluslck@gmail.com",
   "license": "MIT"
 }
