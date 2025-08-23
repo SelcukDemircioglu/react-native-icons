@@ -1,13 +1,21 @@
 <img src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg" width="120" alt="React Icons">
 
 # [React Icons Native](https://react-icons.github.io/react-icons)
+
+[![npm][npm-image]][npm-url]
+
+[npm-image]: https://img.shields.io/npm/v/react-icons-native?style=flat-square
+[npm-url]: https://www.npmjs.com/package/react-icons-native
  
-  <https://www.npmjs.com/package/react-icons-native>
-  <https://www.npmjs.com/package/react-native-svg>
 
 Easily add popular icons to your React Native projects with 'react-icons ver 4.8.0 icons ', which uses imports that allow you to add only the icons your project uses.
 
 <h4>To use react-icons-native, react-native-svg must be installed</h4>
+
+## Features
+
+- Only the SVG icons that you use are included in the build. Unused SVG icons are not bundled, helping to keep your project size optimized.
+- The package automatically bundles only the SVGs you reference in your project; any unused SVGs will be excluded from the final build.
 
 ## Installation (for standard modern project)
 
