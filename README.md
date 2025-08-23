@@ -12,6 +12,11 @@ Easily add popular icons to your React Native projects with 'react-icons ver 4.8
 
 <h4>To use react-icons-native, react-native-svg must be installed</h4>
 
+## Features
+
+- Only the SVG icons that you use are included in the build. Unused SVG icons are not bundled, helping to keep your project size optimized.
+- The package automatically bundles only the SVGs you reference in your project; any unused SVGs will be excluded from the final build.
+
 ## Installation (for standard modern project)
 
 ```bash
