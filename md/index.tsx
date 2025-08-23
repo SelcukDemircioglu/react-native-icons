@@ -1,4 +1,5 @@
 // THIS FILE IS AUTO GENERATED
+import React,{memo} from "react";
 import GenIcon from '../lib';
 import { IconType } from '../lib';
 

@@ -1,32 +1,8 @@
-import * as React from "react";
+import React,{memo} from "react";
 
 // TypeScript tanımlamaları
-export interface SvgProps extends React.SVGAttributes<SVGElement> {
-  xmlns?: string;
-  width?: number | string;
-  height?: number | string;
-  viewBox?: string;
-  fill?: string;
-  stroke?: string;
-  strokeWidth?: number | string;
-  children?: React.ReactNode;
-  [key: string]: any;
-}
-
-// Mock SVG bileşenleri
-const Svg: React.FC<SvgProps> = (props) => React.createElement('svg', props);
-const Rect: React.FC<SvgProps> = (props) => React.createElement('rect', props);
-const Path: React.FC<SvgProps> = (props) => React.createElement('path', props);
-const G: React.FC<SvgProps> = (props) => React.createElement('g', props);
-const Circle: React.FC<SvgProps> = (props) => React.createElement('circle', props);
-const ClipPath: React.FC<SvgProps> = (props) => React.createElement('clipPath', props);
-const Defs: React.FC<SvgProps> = (props) => React.createElement('defs', props);
-const Line: React.FC<SvgProps> = (props) => React.createElement('line', props);
-const Ellipse: React.FC<SvgProps> = (props) => React.createElement('ellipse', props);
-const Polygon: React.FC<SvgProps> = (props) => React.createElement('polygon', props);
-const Polyline: React.FC<SvgProps> = (props) => React.createElement('polyline', props);
-
-export interface IconTree {
+import Svg, { Circle, ClipPath, Defs, Ellipse, G, Line, Path, Polygon, Polyline, Rect, SvgProps } from "react-native-svg";
+export interface IconTree extends SvgProps {
 	tag: string;
 	attr: {
 		[key: string]: any;
@@ -103,7 +79,7 @@ const GenIcon: React.FC<GenIconProps> = (props) => {
 	const { data, ...restProps } = props;
 
 	return (
-		<Svg width={40} height={40} xmlns="http://www.w3.org/2000/svg" {...data?.attr} {...restProps}>
+		<Svg width={40} height={40} {...data?.attr} {...restProps}>
 			{data?.child?.map((item, ind) => {
 				const key = Date.now() + ind + "svgitem";
 				return <RenderSvgItem key={key} {...item} />;
