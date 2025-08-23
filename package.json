@@ -3,19 +3,45 @@
   "version": "1.0.7",
   "description": "",
   "homepage": "https://github.com/SelcukDemircioglu/react-native-icons",
-  "main": "index.js",
+  "main": "index.tsx",
+  "types": "index.tsx",
   "repository": {
     "type": "git",
     "url": "https://github.com/SelcukDemircioglu/react-native-icons"
   },
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-native": "^0.70.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-native": ">=0.60.0",
+    "react-native-svg": ">=12.0.0"
   },
   "keywords": [
     "react-native-icons",
     "react-native",
     "native icons",
-    "icons"
+    "icons",
+    "svg",
+    "react-icons",
+    "mobile icons",
+    "vector icons",
+    "ui",
+    "typescript",
+    "react-native-svg",
+    "icon pack",
+    "icon library",
+    "fontawesome",
+    "material-icons",
+    "bootstrap-icons",
+    "ios",
+    "android"
   ],
   "author": "Selçuk Demircioğlu demirciogluslck@gmail.com",
   "license": "MIT"
